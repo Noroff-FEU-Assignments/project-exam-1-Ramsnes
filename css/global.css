@@ -70,3 +70,7 @@ footer {
   padding: 1px;
   width: 90%;
 }
+
+.current {
+  text-decoration: underline;
+}
