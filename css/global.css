@@ -74,3 +74,47 @@ footer {
 .current {
   text-decoration: underline;
 }
+
+.error {
+  color: red;
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
+  margin-top: 250px;
+  font-size: 0.6em;
+}
+
+#loading {
+  justify-content: center;
+  display: flex;
+  margin-top: auto;
+  color: white;
+  font-size: 2em;
+  /**/
+  align-items: center;
+  height: 70%;
+}
+#loading p {
+  margin: 0;
+}
+
+#loading:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

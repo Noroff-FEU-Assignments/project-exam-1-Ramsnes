@@ -3,7 +3,7 @@ let viewMore = document.querySelector(".viewMore");
 
 // API fetch
 const baseUrl = "https://cors.noroff.dev/ramsnes.no/wp-json/";
-const postsUrl = "wp/v2/posts";
+const postsUrl = "wp/v2/posts?_embed";
 
 // API data(posts) fetch
 async function fetchData() {
@@ -31,7 +31,8 @@ async function renderHTML() {
     <div class="content">
         <h2>${element.title.rendered}</h2>
         <p>${element.excerpt.rendered}</p>
-        <p>${element.date}</p>
+        <img class="featuredImage" src="${element._embedded["wp:featuredmedia"][0].source_url}" alt="#" />
+        <p>Posted: ${element.date}</p>
         
         </div>
         `;
