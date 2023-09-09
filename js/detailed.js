@@ -19,31 +19,27 @@ async function fetchProduct(id) {
 async function renderHTML() {
   try {
     const id = getProductId();
-    const product = await fetchProduct(id);
+    const blog = await fetchProduct(id);
     const uniquePost = document.getElementById("mainPostWrapper");
     uniquePost.removeAttribute("class");
     const loading = document.getElementById("loading");
     loading.remove();
 
     // title change dynamically
-    document.title = `Jiu Jitsu - ${product.title.rendered}`;
+    document.title = `Jiu Jitsu - ${blog.title.rendered}`;
 
-    const description = document.getElementById("description");
-    description.innerHTML = product.description;
+    const header = document.getElementById("postTitle");
+    header.innerHTML = blog.title.rendered;
 
-    const image = document.getElementById("jacketImg");
-    image.src = product.image;
+    const text = document.getElementById("postText");
+    text.innerHTML = blog.excerpt.rendered;
 
-    const jacketPrice = document.getElementById("jacketPrice");
-    jacketPrice.innerHTML = "Price: " + product.price;
-
-    const header = document.getElementById("header");
-    header.innerHTML = product.title;
-
-    const sizes = document.getElementById("sizes");
-    sizes.innerHTML = "Sizes available: " + product.sizes;
+    const image = document.getElementById("postImg");
+    image.src = blog._embedded["wp:featuredmedia"][0].source_url;
   } catch (error) {
     errorMsg.innerHTML =
       '<div class="error">There was an error. Contact online support at 555-444-333.</div>';
   }
 }
+
+renderHTML();

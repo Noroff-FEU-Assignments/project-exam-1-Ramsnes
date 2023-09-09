@@ -30,15 +30,19 @@ async function renderHTML() {
     const blogPosts = `
     <div class="content">
         <h2>${element.title.rendered}</h2>
-        <p>${element.excerpt.rendered}</p>
         <img class="featuredImage" src="${element._embedded["wp:featuredmedia"][0].source_url}" alt="#" />
-        <p>Posted: ${element.date}</p>
-        
         </div>
         `;
-    // <img src="${element["_links"]["wp:featuredmedia"][0].href}" alt="#" />
+
+    // Drafts
+    // <p>${element.excerpt.rendered}</p>
 
     postsElement.innerHTML = blogPosts;
+
+    postsElement.addEventListener("click", function () {
+      window.location.href = `detailed.html?id=${element.id}`;
+    });
+
     tenBlogs.appendChild(postsElement);
   });
 }
