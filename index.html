@@ -57,12 +57,23 @@
       </nav>
       <div class="blackLine"></div>
     </header>
+    <!---->
+
     <main>
-      <div class="mainContainer">
+      <div class="page-container">
         <div class="welcome">Welcome to jiujitsu blog</div>
-        <div class="latestPostsCarousel"></div>
+        <div class="carousel-title-wrap">
+          <h2 class="headline">Recent posts</h2>
+          <a href="blogs.html" class="button-outlined-small">View all</a>
+        </div>
       </div>
+
+      <button onclick="show(-1)">&lt;</button>
+      <button onclick="show(+1)">&gt;</button>
+      <!-- Source: https://medium.com/allenhwkim/how-to-build-a-carousel-in-pure-javascript-98d758a18811 -->
     </main>
+
+    <!---->
     <footer>
       <div class="wrapper">SOME icons here</div>
       <div class="copyright">Copyright Jiu Jitsu LLC &copy;</div>

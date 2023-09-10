@@ -57,11 +57,48 @@
       </nav>
       <div class="blackLine"></div>
     </header>
-    <main>
-      <div class="mainContainer">
-        <div class="contactForm">Contact form here</div>
+    <main class="page-container">
+      <div class="contact-form">
+        <div id="error"></div>
+
+        <form id="form">
+          <fieldset>
+            <legend>Contact Jiu jitsu</legend>
+            <div>
+              <label for="name">Full name</label>
+              <input type="text" name="name" id="name" class="form__input" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form__input" />
+            </div>
+            <div>
+              <label for="tel">Phone</label>
+              <input type="tel" name="tel" id="tel" class="form__input" />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="1"
+                cols="20"
+                class="message"
+              ></textarea>
+            </div>
+          </fieldset>
+          <button id="formButton" type="submit">Submit</button>
+        </form>
+        <!--
+        -->
+        <!-- <div class="button-wrapper">
+          <input type="submit" value="Submit form" class="cta" />
+        </div> -->
+        <!--
+        -->
       </div>
     </main>
+    <script src="js/contact.js"></script>
     <footer>
       <div class="wrapper">SOME icons here</div>
       <div class="copyright">Copyright Jiu Jitsu LLC &copy;</div>
