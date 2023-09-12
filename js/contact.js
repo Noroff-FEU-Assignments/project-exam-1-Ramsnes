@@ -1,23 +1,30 @@
-const name = document.getElementById("name");
+const nameBox = document.getElementById("nameField");
 const email = document.getElementById("email");
-const tel = document.getElementById("tel");
+const subjectBox = document.getElementById("subject");
 const message = document.getElementById("message");
 const form = document.getElementById("form");
 const errorElement = document.getElementById("error");
 
 form.addEventListener("submit", (e) => {
   let messages = [];
-  if (name.value === "" || name.value == null) {
-    messages.push("A name is required");
+
+  if (nameBox.value === "" || nameBox.value == null) {
+    messages.push("A name is required with more than 5 characters long");
   }
   if (email.value === "" || email.value == null) {
-    messages.push("An email address is required");
+    messages.push(
+      "An email address is required. Please include the symbol '@'"
+    );
   }
-  if (tel.value === "" || tel.value == null) {
-    messages.push("A phone number is required");
+  if (subjectBox.value === "" || subjectBox.value == null) {
+    messages.push("Please provide a subject");
   }
   if (message.value === "" || message.value == null) {
     messages.push("A message is required");
+  }
+
+  if (nameBox.value.length < 5) {
+    messages.push("Full name must exceed 5 characters");
   }
 
   if (message.value.length <= 12) {
@@ -28,8 +35,8 @@ form.addEventListener("submit", (e) => {
     messages.push("Message must be less than 100 or more characters");
   }
 
-  if (tel.value.length <= 6) {
-    messages.push("Phone number must be of 6 or more numbers");
+  if (subjectBox.value.length <= 6) {
+    messages.push("Subject must be of 12 or more characters");
   }
 
   if (messages.length > 0) {

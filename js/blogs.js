@@ -20,31 +20,34 @@ fetchData();
 
 // Render the posts from API call
 async function renderHTML() {
-  const tenPosts = await fetchData();
+  try {
+    const tenPosts = await fetchData();
 
-  tenBlogs.innerHTML = ``;
+    tenBlogs.innerHTML = ``;
 
-  tenPosts.forEach(function (element) {
-    const postsElement = document.createElement("li");
+    tenPosts.forEach(function (element) {
+      const postsElement = document.createElement("li");
 
-    const blogPosts = `
-    <div class="content">
-        <h2>${element.title.rendered}</h2>
-        <img class="featuredImage" src="${element._embedded["wp:featuredmedia"][0].source_url}" alt="#" />
+      const blogPosts = `
+        <div class="content">
+          <h3>${element.title.rendered}</h2>
+          <img class="featuredImage" src="${element._embedded["wp:featuredmedia"][0].source_url}" alt="#" />
         </div>
         `;
+      postsElement.innerHTML = blogPosts;
+      postsElement.addEventListener("click", function () {
+        window.location.href = `detailed.html?id=${element.id}`;
+      });
 
-    // Drafts
-    // <p>${element.excerpt.rendered}</p>
-
-    postsElement.innerHTML = blogPosts;
-
-    postsElement.addEventListener("click", function () {
-      window.location.href = `detailed.html?id=${element.id}`;
+      tenBlogs.appendChild(postsElement);
     });
 
-    tenBlogs.appendChild(postsElement);
-  });
+    // Remove the loading element after rendering
+    const loading = document.getElementById("loading");
+    loading.remove();
+  } catch (error) {
+    console.error("Error rendering HTML", error);
+  }
 }
 
 renderHTML();

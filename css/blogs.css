@@ -1,3 +1,19 @@
 .featuredImage {
   width: 200px;
 }
+
+.blogs10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

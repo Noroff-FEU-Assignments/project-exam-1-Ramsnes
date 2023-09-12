@@ -42,6 +42,10 @@ footer {
   color: #ffffff;
 }
 
+li {
+  list-style: none;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -83,6 +87,7 @@ footer {
   font-size: 0.6em;
 }
 
+/* Loading class */
 #loading {
   justify-content: center;
   display: flex;
