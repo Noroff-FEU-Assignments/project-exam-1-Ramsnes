@@ -8,6 +8,11 @@
   flex-direction: row;
 }
 
+.mastersHeader {
+  margin: 50px auto 50px;
+  text-align: center;
+}
+
 /* Carousel */
 /* ul {
   display: flex;
@@ -49,7 +54,7 @@ button.next {
   display: flex;
   max-width: 1100px;
   background: #fff;
-  margin: 50px auto 0;
+  margin: 0px auto 50px;
 }
 
 .image-accordion img {
