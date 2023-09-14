@@ -1,3 +1,4 @@
+/* General */
 .main-container {
   display: flex;
   flex-direction: column;
@@ -13,18 +14,7 @@
   text-align: center;
 }
 
-/* Carousel */
-/* ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-li {
-  display: block;
-  list-style: none;
-} */
-
+/* Buttons */
 button.prev,
 button.next {
   display: flex;
@@ -37,6 +27,7 @@ button.next {
   width: 44px;
   height: 44px;
 }
+
 button.prev {
   position: absolute;
   left: 0;
@@ -76,4 +67,37 @@ figure:hover {
 .selected-image {
   flex: 5;
   opacity: 1;
+}
+
+/* Carousel */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: bisque;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
+  margin-right: 20px;
+}
+
+.carousel-item:last-child {
+  margin-right: 0;
+}
+
+/* Move the buttons under the carousel */
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+.carousel img {
+  width: 100%;
 }

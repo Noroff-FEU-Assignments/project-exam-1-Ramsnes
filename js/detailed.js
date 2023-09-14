@@ -35,8 +35,8 @@ async function renderHTML() {
     const text = document.getElementById("postText");
     text.innerHTML = blog.excerpt.rendered;
 
-    const image = document.getElementById("postImg");
     // Fetches the featured media data and set the image src since I had trouble using same code as in blogs.js
+    const image = document.getElementById("postImg");
     fetch(blog._links["wp:featuredmedia"][0].href)
       .then((response) => response.json())
       .then((featuredMediaData) => {
