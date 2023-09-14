@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   const loadMoreButton = document.getElementById("loadMoreButton");
   loadMoreButton.addEventListener("click", loadMorePosts);
 
-  // Fetch and render the initial posts
+  // Fetching and rendering the initial posts
   const initialPosts = await fetchData(currentPage, postsPerPage);
   renderHTML();
 });

@@ -20,6 +20,7 @@ async function renderHTML() {
   try {
     const id = getProductId();
     const blog = await fetchProduct(id);
+    console.log(blog);
     const uniquePost = document.getElementById("mainPostWrapper");
     uniquePost.removeAttribute("class");
     const loading = document.getElementById("loading");
@@ -35,7 +36,17 @@ async function renderHTML() {
     text.innerHTML = blog.excerpt.rendered;
 
     const image = document.getElementById("postImg");
-    image.src = blog._embedded["wp:featuredmedia"][0].source_url;
+    // Fetches the featured media data and set the image src since I had trouble using same code as in blogs.js
+    fetch(blog._links["wp:featuredmedia"][0].href)
+      .then((response) => response.json())
+      .then((featuredMediaData) => {
+        if (featuredMediaData.source_url) {
+          image.src = featuredMediaData.source_url;
+        } else {
+          // In case the  featured image URL is missing
+          image.src = ""; // Default image
+        }
+      });
   } catch (error) {
     errorMsg.innerHTML =
       '<div class="error">There was an error. Contact online support at 555-444-333.</div>';
