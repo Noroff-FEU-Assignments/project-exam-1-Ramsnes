@@ -10,23 +10,16 @@
 }
 
 .mastersHeader {
-  margin: 50px auto 50px;
+  margin: 30px auto;
   text-align: center;
 }
 
-/* Buttons */
-button.prev,
-button.next {
-  display: flex;
-  font-size: 32px;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-color: #333;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
+h3 {
+  font-size: 0.7rem;
+  color: #000;
 }
+
+/* Buttons */
 
 button.prev {
   position: absolute;
@@ -39,6 +32,44 @@ button.next {
   top: 80px;
 }
 
+button.prev,
+button.next {
+  display: flex;
+  font-size: 24px; /* Reduce the button size */
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 1; /* Places the buttons above the carousel */
+}
+
+.button-outlined-small {
+  margin: auto;
+  left: 85px;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  padding: 0.55rem 0.9rem;
+  text-transform: capitalize;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.button-outlined-small a {
+  color: white;
+  text-decoration: none;
+}
+
 /*Slider*/
 
 .image-accordion {
@@ -46,6 +77,8 @@ button.next {
   max-width: 1100px;
   background: #fff;
   margin: 0px auto 50px;
+  /* max-width: 955px;
+  height: 340px; */
 }
 
 .image-accordion img {
@@ -74,30 +107,45 @@ figure:hover {
   overflow: hidden;
   width: 100%;
   position: relative;
-  display: flex;
-  background-color: bisque;
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center; /* Set the transform origin to the center */
+  width: 400%;
+}
+
+.carousel-title-wrap {
+  margin: 20px 100px;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Center content vertically */
+  overflow: hidden;
+  /* width: 100%; */
+  position: relative;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #ddd; /* Add a border for separation */
+  border-radius: 10px; /* Add some rounded corners */
+  box-shadow: 0px 15px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-item {
-  flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
-  margin-right: 20px;
+  flex: 0 0 25%; /* Each item takes 25% of the container width */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin: 10px;
+  transform: scale(0.9); /* Initial scale-down effect */
 }
 
-.carousel-item:last-child {
-  margin-right: 0;
+.carousel-item:hover {
+  transform: scale(1); /* Enlarge the item on hover */
 }
 
-/* Move the buttons under the carousel */
-.carousel-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Adjust the margin as needed */
+.read-more {
+  font-size: 0.85rem;
 }
+
 .carousel img {
-  width: 100%;
+  height: 150px;
 }

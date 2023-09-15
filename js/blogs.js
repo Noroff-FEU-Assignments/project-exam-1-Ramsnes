@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         loadMoreButton.style.display = "none";
       }
 
-      // Need to make "Remove the loading element after rendering" work
+      // Removes the loading element after rendering
       const loading = document.getElementById("loading");
       loading.remove();
     } catch (error) {
