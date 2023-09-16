@@ -49,6 +49,10 @@ button.next {
   z-index: 1; /* Places the buttons above the carousel */
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .button-outlined-small {
   margin: auto;
   left: 85px;
