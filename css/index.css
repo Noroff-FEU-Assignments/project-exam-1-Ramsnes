@@ -14,11 +14,6 @@
   text-align: center;
 }
 
-h3 {
-  font-size: 0.7rem;
-  color: #000;
-}
-
 /* Buttons */
 
 button.prev {
@@ -139,11 +134,11 @@ figure:hover {
   transition: transform 0.3s ease;
   cursor: pointer;
   margin: 10px;
-  transform: scale(0.9); /* Initial scale-down effect */
+  transform: scale(0.9); /* Scales down image before I scale up */
 }
 
 .carousel-item:hover {
-  transform: scale(1); /* Enlarge the item on hover */
+  transform: scale(1); /* Enlarges the items on hover */
 }
 
 .read-more {
@@ -152,4 +147,60 @@ figure:hover {
 
 .carousel img {
   height: 150px;
+}
+
+/* mq */
+/* tablet */
+@media (max-width: 1000px) {
+  h3 {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .image-accordion {
+    max-width: 450px;
+  }
+
+  .image-accordion img {
+    height: 200px;
+  }
+
+  .carousel-title-wrap {
+    margin: 20px 20px;
+  }
+
+  .carousel {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .carousel-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* phone */
+@media (max-width: 500px) {
+  h3 {
+    font-size: 0.65rem;
+  }
+
+  .image-accordion {
+    max-width: 300px;
+  }
+
+  .image-accordion img {
+    height: 150px;
+  }
+
+  .carousel-title-wrap {
+    margin: 20px 35px;
+  }
+
+  .carousel img {
+    height: 100px;
+  }
 }

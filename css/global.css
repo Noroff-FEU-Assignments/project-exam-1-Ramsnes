@@ -44,6 +44,7 @@ footer {
   align-items: center;
   background-color: #000;
   color: #ffffff;
+  font-size: 0.85rem;
 }
 
 li {
@@ -125,5 +126,51 @@ li {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* mq */
+/* tablet */
+@media (max-width: 1000px) {
+  .logo {
+    width: 50px;
+  }
+
+  .nav-container div a {
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.65rem;
+  }
+
+  .blackLine {
+    padding: 0.8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 35px;
+  }
+
+  .nav-container div a {
+    font-size: 0.55rem;
+  }
+
+  h2 {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    font-size: 0.55rem;
+  }
+
+  .blackLine {
+    padding: 0.5px;
   }
 }
