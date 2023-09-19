@@ -54,3 +54,28 @@ async function renderHTML() {
 }
 
 renderHTML();
+
+// Modal
+const modal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+const overlay = document.createElement("div");
+overlay.className = "modal-overlay";
+
+document.body.appendChild(overlay);
+
+document.getElementById("postImg").addEventListener("click", function () {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  modalImage.src = this.src;
+});
+
+closeModal.addEventListener("click", function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+});
