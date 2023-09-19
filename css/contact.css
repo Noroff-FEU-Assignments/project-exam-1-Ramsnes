@@ -42,17 +42,14 @@ fieldset div {
 }
 
 #formButton {
-  color: black;
-  background-color: white;
-
+  /* border: none; */
   background: rgb(11, 91, 133);
-  border: none;
   width: 200px;
   padding: 1rem;
-  color: white;
+  border-radius: 0.2rem;
+  color: #ffffff;
   margin-top: 10px;
   cursor: pointer;
-  border-radius: 0.2rem;
 }
 
 .button-wrapper {

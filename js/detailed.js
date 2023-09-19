@@ -27,7 +27,7 @@ async function renderHTML() {
     loading.remove();
 
     // title change dynamically
-    document.title = `Jiu Jitsu - ${blog.title.rendered}`;
+    document.title = `Jiu Jitsu | ${blog.title.rendered}`;
 
     const header = document.getElementById("postTitle");
     header.innerHTML = blog.title.rendered;
@@ -55,7 +55,7 @@ async function renderHTML() {
 
 renderHTML();
 
-// Modal
+// Modal that expands image when clicked
 const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const closeModal = document.getElementById("closeModal");

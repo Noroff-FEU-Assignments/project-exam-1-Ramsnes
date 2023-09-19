@@ -1,5 +1,6 @@
-.featuredImage {
-  width: 200px;
+h2 {
+  text-align: center;
+  margin: 50px auto 0;
 }
 
 .blogs10 {
@@ -10,8 +11,12 @@
   justify-content: space-evenly;
 }
 
-h2 {
-  text-align: center;
+.blogs10 li {
+  margin: 50px;
+}
+
+.featuredImage {
+  width: 200px;
 }
 
 .content {
@@ -20,6 +25,13 @@ h2 {
   align-items: center;
 }
 
-.maintContainer {
-  height: 550px;
+#loadMoreButton {
+  display: block; /* Needed to be able to center align the button */
+  margin: 10px auto 50px;
+  text-align: center;
+  background: rgb(11, 91, 133);
+  width: 200px;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  color: #fff;
 }
