@@ -150,6 +150,13 @@ figure:hover {
 }
 
 /* mq */
+/* carousel images */
+@media (max-width: 1200px) {
+  .carousel img {
+    height: 110px;
+  }
+}
+
 /* tablet */
 @media (max-width: 1000px) {
   h3 {
