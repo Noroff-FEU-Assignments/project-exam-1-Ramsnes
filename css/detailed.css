@@ -72,3 +72,29 @@
   height: 100%;
   /* background-color: rgba(0, 0, 0, 0.7); */
 }
+
+@media (max-width: 1000px) {
+  .postContainer {
+    margin: 20px 0px 0px 0px;
+  }
+
+  #postText {
+    font-size: 0.8rem;
+    margin: 0 75px;
+  }
+
+  #postImg {
+    width: 275px;
+  }
+}
+
+@media (max-width: 500px) {
+  #postText {
+    font-size: 0.7rem;
+    margin: 0 40px;
+  }
+
+  #postImg {
+    width: 200px;
+  }
+}

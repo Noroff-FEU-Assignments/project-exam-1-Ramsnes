@@ -171,14 +171,20 @@ figure:hover {
   }
 
   .carousel {
-    flex-direction: column;
     justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10px 0 10px;
   }
 
   .carousel-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .carousel img {
+    height: 100px;
   }
 }
 
@@ -202,5 +208,11 @@ figure:hover {
 
   .carousel img {
     height: 100px;
+  }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 10px 0 10px;
   }
 }
