@@ -3,7 +3,7 @@ h2 {
 }
 
 .about-text {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .mainContainer {
@@ -21,4 +21,20 @@ h2 {
 .about-images img {
   width: 200px;
   margin: 0 20px 0 20px;
+}
+
+@media (max-width: 1000px) {
+  .mainContainer {
+    margin: 50px 70px;
+  }
+
+  .about-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-images img {
+    width: 150px;
+  }
 }

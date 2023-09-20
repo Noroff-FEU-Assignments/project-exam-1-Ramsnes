@@ -1,6 +1,8 @@
 .page-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -71,11 +73,47 @@ fieldset div {
 
 .contact-form p {
   text-align: center;
-  font-size: 14px;
   margin: 8px;
 }
 
 form {
   margin: 0;
   font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  h2 {
+    text-align: center;
+  }
+
+  #form {
+    font-size: 0.8rem;
+  }
+
+  .contact-text {
+    margin: 0 150px;
+  }
+
+  .contact-text p {
+    font-size: 0.75rem;
+  }
+
+  #formButton {
+    width: 150px;
+    padding: 0.65rem;
+    /* font-size: 0.75; */
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-text {
+    margin: 0 85px;
+  }
+
+  #form {
+    font-size: 0.7rem;
+  }
 }

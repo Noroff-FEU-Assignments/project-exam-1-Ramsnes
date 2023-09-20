@@ -140,7 +140,8 @@ li {
     font-size: 0.75rem;
   }
 
-  h2 {
+  h2,
+  h3 {
     font-size: 0.95rem;
   }
 
@@ -159,10 +160,12 @@ li {
   }
 
   .nav-container div a {
-    font-size: 0.55rem;
+    font-size: 0.6rem;
+    font-weight: 535;
   }
 
-  h2 {
+  h2,
+  h3 {
     font-size: 0.75rem;
   }
 
