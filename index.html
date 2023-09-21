@@ -30,29 +30,28 @@
   </head>
   <body>
     <header>
-      <nav class="wrapper">
-        <div class="nav-container">
-          <div class="logoContainer">
-            <a href="/index.html">
-              <img
-                src="/images/jiujitsuLogo.jpg"
-                alt="white logo with black font saying jiu jitsu"
-                class="logo"
-              />
-            </a>
-          </div>
-          <div>
-            <a class="current" href="/index.html">Home</a>
-          </div>
-          <div>
-            <a href="/blogs.html">Blogs</a>
-          </div>
-          <div>
-            <a href="/about.html">About</a>
-          </div>
-          <div>
-            <a href="/contact.html">Contact</a>
-          </div>
+      <nav class="nav-container">
+        <div class="logoContainer">
+          <a href="/index.html">
+            <img
+              src="/images/jiujitsuLogo.jpg"
+              alt="white logo with black font saying jiu jitsu"
+              class="logo"
+            />
+          </a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li class="current"><a href="/index.html">Home</a></li>
+            <li><a href="/blogs.html">Blogs</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
         </div>
       </nav>
       <div class="blackLine"></div>
@@ -101,5 +100,6 @@
       <div class="copyright">Copyright Jiu Jitsu LLC &copy;</div>
     </footer>
     <script src="/js/index.js"></script>
+    <script src="/js/hamburger.js"></script>
   </body>
 </html>
