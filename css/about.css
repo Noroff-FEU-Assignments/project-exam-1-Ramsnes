@@ -2,8 +2,9 @@ h2 {
   text-align: center;
 }
 
-.about-text {
-  /* text-align: center; */
+/*header differs from index for some reason*/
+header {
+  margin-top: 13px;
 }
 
 .mainContainer {
@@ -36,5 +37,10 @@ h2 {
 @media (max-width: 500px) {
   .about-images img {
     width: 150px;
+  }
+
+  .nav-container div {
+    margin: 70px 100px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }

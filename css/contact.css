@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+/*header differs from index for some reason*/
+header {
+  /* margin-top: 13px; */
+}
+
 /*
 
 Contact form
@@ -74,6 +79,10 @@ fieldset div {
 .contact-form p {
   text-align: center;
   margin: 8px;
+}
+
+.contact-text {
+  margin: 0 400px;
 }
 
 form {

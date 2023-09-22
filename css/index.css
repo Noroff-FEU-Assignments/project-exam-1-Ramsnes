@@ -1,14 +1,4 @@
 /* General */
-.main-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.upperMain {
-  display: flex;
-  flex-direction: row;
-}
-
 .mastersHeader {
   margin: 30px auto;
   text-align: center;
@@ -30,7 +20,7 @@ button.next {
 button.prev,
 button.next {
   display: flex;
-  font-size: 24px; /* Reduce the button size */
+  font-size: 24px; /* button size */
   align-items: center;
   justify-content: center;
   color: #fff;

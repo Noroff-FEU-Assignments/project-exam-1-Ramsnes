@@ -80,11 +80,6 @@ li {
   border-radius: 5px;
 }
 
-.logoContainer {
-  /* border: 1px solid black; */
-  margin-right: 20px;
-}
-
 .logo {
   width: 70px;
 }
@@ -93,8 +88,8 @@ li {
 /* Source: https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified  */
 .toggle-button {
   position: absolute;
-  top: 2.5rem;
-  right: 1rem;
+  top: 0.3rem;
+  left: 8rem;
   display: none; /*Hides in big viewports*/
   flex-direction: column;
   justify-content: space-between;
@@ -190,7 +185,7 @@ li {
 
   .blackLine {
     padding: 0.8px;
-    top: 110px;
+    top: 90px;
   }
 }
 
@@ -203,10 +198,11 @@ li {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
   }
 
   .nav-container div {
-    margin: 70px 100px;
+    /* margin: 70px 100px; */
     background-color: rgba(255, 255, 255, 0.9);
   }
 
@@ -224,18 +220,14 @@ li {
     text-align: center;
   }
 
-  .navbar-links li a {
-    /* padding: 0.5rem 1rem; */
-  }
-
   .navbar-links.active {
     display: flex;
-    margin: 10px;
     border: 1px solid black;
-    position: relative;
-    top: 2rem;
-    left: 65px;
     z-index: 2;
+    width: 200px;
+    position: fixed;
+    top: 6rem;
+    left: 7.5rem;
   }
 
   .navbar-links.active ul {
@@ -244,6 +236,9 @@ li {
   /**/
   .logo {
     width: 40px;
+    position: absolute; /*to fix logo getting pushed up*/
+    left: 45%;
+    top: 4%;
   }
 
   .nav-container div a {
