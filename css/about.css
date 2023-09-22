@@ -43,4 +43,19 @@ header {
     margin: 70px 100px;
     background-color: rgba(255, 255, 255, 0.9);
   }
+
+  .navbar-links.active {
+    top: 0.7rem;
+    left: -3.5rem;
+  }
+  /*fixed values for the hamb menu and logo for about and detailed.html*/
+  .toggle-button {
+    top: 2.95rem;
+    left: 13rem;
+  }
+
+  .logo {
+    left: 5rem;
+    top: 2.32rem;
+  }
 }

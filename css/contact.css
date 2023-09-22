@@ -7,7 +7,7 @@
 
 /*header differs from index for some reason*/
 header {
-  /* margin-top: 13px; */
+  margin-top: 13px;
 }
 
 /*
@@ -124,5 +124,13 @@ form {
 
   #form {
     font-size: 0.7rem;
+  }
+
+  .toggle-button {
+    top: 1.4rem;
+  }
+
+  .logo {
+    top: 0.75rem;
   }
 }

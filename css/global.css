@@ -222,12 +222,13 @@ li {
 
   .navbar-links.active {
     display: flex;
+    backdrop-filter: blur(3px);
     border: 1px solid black;
     z-index: 2;
     width: 200px;
-    position: fixed;
-    top: 6rem;
-    left: 7.5rem;
+    position: absolute;
+    top: 2.5rem;
+    left: -3.5rem;
   }
 
   .navbar-links.active ul {
@@ -237,8 +238,8 @@ li {
   .logo {
     width: 40px;
     position: absolute; /*to fix logo getting pushed up*/
-    left: 45%;
-    top: 4%;
+    left: 0%;
+    top: -0.3rem;
   }
 
   .nav-container div a {

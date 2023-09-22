@@ -1,5 +1,9 @@
 /**/
 
+body header {
+  margin-top: 13px;
+}
+
 .postContainer {
   margin: 100px 400px 0 400px;
   display: flex;
@@ -96,5 +100,16 @@
 
   #postImg {
     width: 200px;
+  }
+
+  /*fixed values for the hamb menu and logo for about and detailed.html*/
+  .toggle-button {
+    top: 2.95rem;
+    left: 13rem;
+  }
+
+  .logo {
+    left: 5rem;
+    top: 2.32rem;
   }
 }
