@@ -48,6 +48,10 @@ button:hover {
   cursor: pointer;
 }
 
+h3 {
+  color: #000;
+}
+
 .button-outlined-small {
   margin: auto;
   left: 85px;
@@ -139,6 +143,10 @@ figure:hover {
 
 .carousel-item:hover {
   transform: scale(1); /* Enlarges the items on hover */
+}
+
+.carousel-item a {
+  text-decoration: none;
 }
 
 .read-more {

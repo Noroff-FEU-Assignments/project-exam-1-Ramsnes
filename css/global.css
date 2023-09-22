@@ -49,6 +49,7 @@ footer {
 
 li {
   list-style: none;
+  margin: auto 10px;
 }
 
 /* nav */
@@ -61,6 +62,7 @@ li {
 
 .navbar-links ul {
   display: flex;
+  padding: 0;
 }
 
 .nav-container {
@@ -88,9 +90,10 @@ li {
 }
 
 /* Hamburger menu */
+/* Source: https://www.youtube.com/watch?v=At4B7A4GOPg&ab_channel=WebDevSimplified  */
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
+  top: 2.5rem;
   right: 1rem;
   display: none; /*Hides in big viewports*/
   flex-direction: column;
@@ -110,7 +113,9 @@ li {
 .blackLine {
   background-color: black;
   padding: 1px;
-  width: 90%;
+  width: 100%;
+  position: absolute;
+  top: 95px;
 }
 
 .current {
@@ -176,6 +181,7 @@ li {
   h2,
   h3 {
     font-size: 0.95rem;
+    color: #000;
   }
 
   footer {
@@ -184,10 +190,12 @@ li {
 
   .blackLine {
     padding: 0.8px;
+    top: 110px;
   }
 }
 
 @media (max-width: 500px) {
+  /* Hamburger */
   .toggle-button {
     display: flex;
   }
@@ -195,6 +203,11 @@ li {
   .nav-container {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .nav-container div {
+    margin: 70px 100px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .nav-container ul {
@@ -212,15 +225,25 @@ li {
   }
 
   .navbar-links li a {
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
   }
 
   .navbar-links.active {
     display: flex;
+    margin: 10px;
+    border: 1px solid black;
+    position: relative;
+    top: 2rem;
+    left: 65px;
+    z-index: 2;
   }
 
+  .navbar-links.active ul {
+    padding: 0;
+  }
+  /**/
   .logo {
-    width: 35px;
+    width: 40px;
   }
 
   .nav-container div a {
@@ -239,5 +262,7 @@ li {
 
   .blackLine {
     padding: 0.5px;
+    display: block;
+    top: 90px;
   }
 }
