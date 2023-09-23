@@ -79,7 +79,7 @@ body header {
 
 @media (max-width: 1000px) {
   .postContainer {
-    margin: 20px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
   }
 
   #postText {
@@ -104,12 +104,12 @@ body header {
 
   /*fixed values for the hamb menu and logo for about and detailed.html*/
   .toggle-button {
-    top: 2.95rem;
+    top: 1.38rem !important;
     left: 13rem;
   }
 
   .logo {
     left: 5rem;
-    top: 2.32rem;
+    top: 0.75rem !important;
   }
 }

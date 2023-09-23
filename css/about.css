@@ -58,4 +58,12 @@ header {
     left: 5rem;
     top: 2.32rem;
   }
+
+  .mainContainer {
+    margin: -12px 70px;
+  }
+
+  .about-images {
+    margin: 20px;
+  }
 }
