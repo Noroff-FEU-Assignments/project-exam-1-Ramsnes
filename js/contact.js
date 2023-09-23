@@ -1,4 +1,4 @@
-const nameBox = document.getElementById("nameField");
+let nameBox = document.getElementById("nameField");
 const email = document.getElementById("email");
 const subjectBox = document.getElementById("subject");
 const message = document.getElementById("message");
