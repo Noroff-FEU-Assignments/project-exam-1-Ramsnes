@@ -12,11 +12,23 @@ h2 {
 }
 
 .blogs10 li {
-  margin: 50px;
+  margin: auto;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.blogs10 li:hover {
+  transform: scale(1);
 }
 
 .featuredImage {
   width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.featuredImage:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -34,6 +46,14 @@ h2 {
   padding: 1rem;
   border-radius: 0.2rem;
   color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+#loadMoreButton:hover {
+  transform: scale(1);
+  background: rgb(43, 126, 171);
 }
 
 @media (max-width: 1000px) {

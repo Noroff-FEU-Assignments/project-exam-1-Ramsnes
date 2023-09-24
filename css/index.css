@@ -32,10 +32,13 @@ button.next {
   top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Center vertically */
   z-index: 1; /* Places the buttons above the carousel */
+  transition: transform 0.3s ease;
+  transform: scale(0.9);
 }
 
 button:hover {
   cursor: pointer;
+  transform: scale(1);
 }
 
 h3 {
@@ -56,6 +59,14 @@ h3 {
   z-index: 1;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  transform: scale(0.95);
+  border: 1.5px solid white;
+}
+
+.button-outlined-small:hover {
+  transform: scale(1);
+  background-color: rgb(34, 34, 34);
 }
 
 .button-outlined-small a {
@@ -125,14 +136,14 @@ figure:hover {
 
 .carousel-item {
   flex: 0 0 25%; /* Each item takes 25% of the container width */
-  transition: transform 0.3s ease;
-  cursor: pointer;
   margin: 10px;
+  transition: transform 0.3s ease; /* How fast the enlargement is */
+  cursor: pointer;
   transform: scale(0.9); /* Scales down image before I scale up */
 }
 
 .carousel-item:hover {
-  transform: scale(1); /* Enlarges the items on hover */
+  transform: scale(1); /* Enlarges the items when I hover */
 }
 
 .carousel-item a {
