@@ -29,7 +29,7 @@ button.next {
   width: 56px;
   height: 56px;
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 40%;
   transform: translateY(-50%); /* Center vertically */
   z-index: 1; /* Places the buttons above the carousel */
   transition: transform 0.3s ease;
@@ -39,6 +39,8 @@ button.next {
 button:hover {
   cursor: pointer;
   transform: scale(1);
+  background-color: #131313;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
@@ -87,6 +89,7 @@ h3 {
 
 .image-accordion img {
   height: 500px;
+  border-radius: 0px;
 }
 
 figure {
@@ -139,11 +142,11 @@ figure:hover {
   margin: 10px;
   transition: transform 0.3s ease; /* How fast the enlargement is */
   cursor: pointer;
-  transform: scale(0.9); /* Scales down image before I scale up */
+  transform: scale(0.85); /* Scales down image before I scale up */
 }
 
 .carousel-item:hover {
-  transform: scale(1); /* Enlarges the items when I hover */
+  transform: scale(0.9); /* Enlarges the items when I hover */
 }
 
 .carousel-item a {
