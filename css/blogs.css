@@ -27,9 +27,9 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-/* .featuredImage:hover {
+.featuredImage:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-} */
+}
 
 .content {
   display: flex;
