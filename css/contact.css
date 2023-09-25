@@ -45,6 +45,9 @@ fieldset div {
   color: #ff4500;
   font-size: 0.9rem;
   margin: 10px 300px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  padding: 10px;
 }
 
 #formButton {
