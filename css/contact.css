@@ -43,9 +43,8 @@ fieldset div {
 
 #error {
   color: #ff4500;
-  max-width: 220px;
-  margin: 0 0 20px 0;
   font-size: 0.9rem;
+  margin: 10px 300px 20px;
 }
 
 #formButton {
@@ -87,7 +86,7 @@ fieldset div {
 }
 
 .contact-text {
-  margin: 0 400px;
+  margin: 0 300px;
 }
 
 form {
@@ -99,8 +98,17 @@ form {
 }
 
 @media (max-width: 1000px) {
+  header {
+    margin-bottom: 30px;
+  }
+
   h2 {
     text-align: center;
+  }
+
+  #error {
+    margin: 0 100px 20px;
+    font-size: 0.7rem;
   }
 
   #form {
@@ -108,11 +116,11 @@ form {
   }
 
   .contact-text {
-    margin: 0 150px;
+    margin: 0 100px;
   }
 
   .contact-text p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   #formButton {
@@ -123,8 +131,17 @@ form {
 }
 
 @media (max-width: 500px) {
+  header {
+    margin-bottom: 40px;
+  }
+
   .contact-text {
-    margin: 0 85px;
+    margin: 0 50px;
+  }
+
+  #error {
+    margin: 0px 50px 5px;
+    font-size: 0.6rem;
   }
 
   #form {
