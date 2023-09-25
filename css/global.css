@@ -47,6 +47,20 @@ footer {
   font-size: 0.85rem;
 }
 
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copyright p {
+  margin-left: 1rem;
+}
+
+.some {
+  height: 15px;
+}
+
 li {
   list-style: none;
   margin: auto 10px;
