@@ -111,6 +111,7 @@ figure:hover {
 }
 
 /* Carousel */
+
 .carousel-container {
   overflow: hidden;
   width: 100%;
@@ -129,11 +130,10 @@ figure:hover {
   justify-content: space-between; /* Distribute content evenly */
   align-items: center; /* Center content vertically */
   overflow: hidden;
-  /* width: 100%; */
   position: relative;
   display: flex;
-  background-color: rgb(236 236 236);
-  border: 2px solid #ddd; /* Add a border for separation */
+  background-color: #f7f7f7;
+  border: 1px solid rgb(189 189 189);
   border-radius: 10px; /* Add some rounded corners */
   box-shadow: 0px 15px 20px 10px rgba(0, 0, 0, 0.3);
 }

@@ -34,6 +34,16 @@ async function renderLatestPosts(page) {
   const carouselContainer = document.querySelector(".carousel");
 
   try {
+    // Fade out the existing carousel items
+    const existingItems = document.querySelectorAll(".carousel-item");
+    existingItems.forEach((item) => {
+      item.style.opacity = "0";
+      item.style.transition = "opacity 0.5s ease-in-out";
+    });
+
+    // Wait for the fade-out transition to complete
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
     // Fetch the latest posts based on the current page
     const response = await fetch(
       `${baseUrl}${postsUrl}&per_page=${postsPerPage}&orderby=date&page=${page}`
@@ -43,7 +53,7 @@ async function renderLatestPosts(page) {
     // Clear existing carousel items
     carouselContainer.innerHTML = "";
 
-    // Loop through the fetched posts and create carousel items
+    // Loop through the fetched posts and create carousel items with fade-in effect
     data.forEach(function (post) {
       const carouselItem = document.createElement("div");
       carouselItem.classList.add("carousel-item");
@@ -58,13 +68,19 @@ async function renderLatestPosts(page) {
 
       carouselItem.innerHTML = postContent;
       carouselContainer.appendChild(carouselItem);
+
+      // Fade-in effect to new row of 4 posts
+      setTimeout(() => {
+        carouselItem.style.opacity = "1";
+        carouselItem.style.transition = "opacity 0.5s ease-in-out";
+      }, 10);
     });
   } catch (error) {
     console.error("Error fetching and rendering latest posts", error);
   }
 }
 
-// Initialize the carousel by fetching total posts and rendering the first page
+// Initializes the carousel by fetching total posts and rendering the first page
 fetchTotalPosts().then(() => {
   renderLatestPosts(currentPage);
 });

@@ -41,6 +41,6 @@ form.addEventListener("submit", (e) => {
 
   if (messages.length > 0) {
     e.preventDefault(); //prevents page reload
-    errorElement.innerText = messages.join(", "); //all error messages joined, each separated by a comma
+    errorElement.innerText = messages.join(" ...  "); //all error messages joined, each separated by a comma
   }
 });
