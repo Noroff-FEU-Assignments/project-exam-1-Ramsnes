@@ -1,10 +1,97 @@
+/* hero banner  */
+.hero {
+  background-image: url("/images/Gracie-Family.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  animation: fadeIn 2s; /* fade-in animation maybe keep */
+  background: rgba(255, 255, 255, 0.7);
+  color: black;
+  /* color: white; */
+  /* background: rgba(0, 0, 0, 0.7); */
+  border-radius: 10px;
+}
+
+.hero-content p {
+  margin: 20px 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* timeline  */
+.timeline-event {
+  width: 70%;
+  margin: 20px auto;
+  padding: 0px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.timeline-event h3 {
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
+.timeline-content {
+  display: none; /* Initially hide the content */
+  padding: 10px;
+}
+
+.timeline-event.active .timeline-content {
+  display: block; /* Display content when the event is active */
+}
+
+/* video */
+.video-section {
+  text-align: center;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-us img {
+  height: 300px;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  margin: 0 0 0 10px;
+}
+
+/**/
 h2 {
   text-align: center;
 }
 
 /*header differs from index for some reason*/
 header {
-  margin-top: 13px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .mainContainer {
@@ -13,32 +100,13 @@ header {
   margin: 50px 250px;
 }
 
-.about-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.about-images img {
-  width: 200px;
-  margin: 0 20px 0 20px;
-}
-
 @media (max-width: 1000px) {
   .mainContainer {
     margin: 50px 70px;
   }
-
-  .about-text {
-    font-size: 0.8rem;
-  }
 }
 
 @media (max-width: 500px) {
-  .about-images img {
-    width: 150px;
-  }
-
   .nav-container div {
     margin: 70px 100px;
     background-color: rgba(255, 255, 255, 0.9);
