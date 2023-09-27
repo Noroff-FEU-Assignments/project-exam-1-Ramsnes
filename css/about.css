@@ -12,11 +12,9 @@
 
 .hero-content {
   text-align: center;
-  animation: fadeIn 2s; /* fade-in animation maybe keep */
+  animation: fadeIn 2s; /* fade-in animation */
   background: rgba(255, 255, 255, 0.7);
   color: black;
-  /* color: white; */
-  /* background: rgba(0, 0, 0, 0.7); */
   border-radius: 10px;
 }
 
@@ -105,7 +103,15 @@ header {
     margin: 50px 70px;
   }
 
-  .about-us p {
+  .hero-content {
+    width: 450px;
+  }
+
+  h1 {
+    font-size: 0.8rem;
+  }
+
+  p {
     font-size: 0.75rem;
   }
 
@@ -121,8 +127,24 @@ header {
 }
 
 @media (max-width: 500px) {
-  .about-us p {
+  header {
+    margin-top: 58px;
+  }
+
+  h1 {
+    font-size: 0.7rem;
+  }
+
+  p {
     font-size: 0.65rem;
+  }
+
+  .about-us {
+    margin: 20px auto;
+  }
+
+  .hero-content {
+    width: 350px;
   }
 
   .about-us img {
