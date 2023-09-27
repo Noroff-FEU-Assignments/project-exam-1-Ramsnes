@@ -76,7 +76,7 @@
 }
 
 .about-us img {
-  height: 300px;
+  height: 250px;
   border-radius: 0.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
   border: 1px solid black;
@@ -104,9 +104,31 @@ header {
   .mainContainer {
     margin: 50px 70px;
   }
+
+  .about-us p {
+    font-size: 0.75rem;
+  }
+
+  .about-us img {
+    height: 200px;
+  }
+
+  .video-section iframe {
+    width: 100%; /* Sets the width to 100% for responsiveness */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
 }
 
 @media (max-width: 500px) {
+  .about-us p {
+    font-size: 0.65rem;
+  }
+
+  .about-us img {
+    height: 100px;
+  }
+
   .nav-container div {
     margin: 70px 100px;
     background-color: rgba(255, 255, 255, 0.9);
