@@ -134,4 +134,8 @@ body header {
     top: 35%;
     left: 45%;
   }
+
+  .nav-container .navbar-links.active {
+    top: 3.5rem;
+  }
 }
