@@ -14,6 +14,14 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif,
+    sans-serif;
+}
+
 main {
   flex-grow: 1;
 }
@@ -68,6 +76,11 @@ li {
 
 img {
   border-radius: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 /* nav */
@@ -175,7 +188,7 @@ img {
   content: "";
   box-sizing: border-box;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   width: 50px;
   height: 50px;
@@ -183,7 +196,7 @@ img {
   margin-left: -25px;
   border-radius: 50%;
   border: 3px solid #ccc;
-  border-top-color: #007bff;
+  border-top-color: #ff0000;
   animation: spin 1s ease-in-out infinite;
 }
 
@@ -204,10 +217,13 @@ img {
     font-size: 0.75rem;
   }
 
+  h1 {
+    font-size: 1rem;
+  }
+
   h2,
   h3 {
     font-size: 0.95rem;
-    color: #000;
   }
 
   footer {

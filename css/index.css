@@ -76,6 +76,26 @@ h3 {
   text-decoration: none;
 }
 
+/*Banner*/
+.welcome-banner h1 {
+  font-size: 2.8rem;
+  font-weight: 800; /* Optionally, set the font weight */
+  color: #333; /* Text color */
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Add padding for spacing */
+  opacity: 0; /* Initially, make the text transparent */
+  animation: fadeIn 1s ease-in forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with transparency */
+  }
+  100% {
+    opacity: 1; /* Fully visible at the end of the animation */
+  }
+}
+
 /*Slider*/
 
 .image-accordion {
@@ -167,15 +187,16 @@ figure:hover {
 }
 
 /* mq */
-/* carousel images */
-@media (max-width: 1200px) {
+/* tablet */
+@media (max-width: 1000px) {
   .carousel img {
     height: 110px;
   }
-}
 
-/* tablet */
-@media (max-width: 1000px) {
+  .welcome-banner {
+    font-size: 40px;
+  }
+
   h3 {
     text-align: center;
     color: #000;
@@ -214,6 +235,10 @@ figure:hover {
 
 /* phone */
 @media (max-width: 500px) {
+  .welcome-banner {
+    font-size: 30px;
+  }
+
   h3 {
     font-size: 0.65rem;
   }

@@ -1,5 +1,4 @@
-h2 {
-  text-align: center;
+h1 {
   margin: 50px auto 0;
 }
 
@@ -41,7 +40,8 @@ h2 {
   display: block; /* Needed to be able to center align the button */
   margin: 10px auto 50px;
   text-align: center;
-  background: rgb(11, 91, 133);
+  /* background: rgb(11, 91, 133); */
+  background: rgb(133, 11, 11);
   width: 200px;
   padding: 1rem;
   border-radius: 0.2rem;
@@ -53,8 +53,10 @@ h2 {
 
 #loadMoreButton:hover {
   transform: scale(1);
-  background: rgb(43, 126, 171);
+  background: rgb(133, 11, 11, 0.8);
 }
+
+/* #loading is on global.css */
 
 @media (max-width: 1000px) {
   .blogs10 {

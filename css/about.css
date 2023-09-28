@@ -20,6 +20,7 @@
 
 .hero-content p {
   margin: 20px 30px;
+  font-size: 1.4rem;
 }
 
 @keyframes fadeIn {
@@ -47,6 +48,10 @@
   margin: 0;
   padding: 10px;
   cursor: pointer; /* Add a pointer cursor for better UX */
+}
+
+.timeline-event h3:hover {
+  background: #fff;
 }
 
 .timeline-content {
@@ -111,8 +116,8 @@ header {
     width: 450px;
   }
 
-  h1 {
-    font-size: 0.8rem;
+  .hero-content p {
+    font-size: 1.2rem;
   }
 
   p {
@@ -136,6 +141,10 @@ header {
   }
 
   h1 {
+    font-size: 0.7rem;
+  }
+
+  .hero-content p {
     font-size: 0.7rem;
   }
 
