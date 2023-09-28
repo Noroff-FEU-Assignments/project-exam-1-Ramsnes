@@ -76,6 +76,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.55rem;
+}
+
 p {
   font-size: 1.3rem;
 }
@@ -114,6 +118,7 @@ p {
   text-decoration: none;
   display: block;
   margin: 1rem;
+  font-size: 1.2rem;
 }
 
 .current {
@@ -211,7 +216,7 @@ p {
   }
 
   .nav-container div a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   p {
@@ -298,11 +303,6 @@ p {
     position: absolute; /*to fix logo getting pushed up*/
     left: 0%;
     top: -0.3rem;
-  }
-
-  .nav-container div a {
-    font-size: 0.6rem;
-    font-weight: 535;
   }
 
   p {

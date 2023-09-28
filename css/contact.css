@@ -148,7 +148,7 @@ fieldset div {
 
 @media (max-width: 500px) {
   header {
-    margin-bottom: 40px;
+    margin: 12px auto 40px;
   }
 
   .map-container {
