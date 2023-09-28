@@ -32,7 +32,8 @@ form {
 
 form fieldset {
   max-width: 182px;
-  max-height: 183px;
+  max-height: 400px;
+  overflow-y: auto; /* Add vertical scroll if the content overflows */
 }
 
 fieldset div {
@@ -45,13 +46,17 @@ fieldset div {
   color: #ff4500;
   font-size: 0.9rem;
   margin: 10px 300px 20px;
-}
 
-/* #error only on text {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  border: 2px solid black;
-  padding: 10px;
-} */
+  /* background-color: #ff4500; Background color for the error message */
+  color: rgb(220, 59, 59); /* Text color for the error message */
+  font-size: 1rem; /* Adjust font size as needed */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center-align the text */
+  margin: 10px 250px; /* Center horizontally with top and bottom margins */
+  /* max-width: 500px; Limit the width to prevent it from stretching too wide */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+}
 
 #formButton {
   /* border: none; */
@@ -103,6 +108,13 @@ form {
   align-items: center;
 }
 
+.map-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 @media (max-width: 1000px) {
   header {
     margin-bottom: 30px;
@@ -139,6 +151,10 @@ form {
 @media (max-width: 500px) {
   header {
     margin-bottom: 40px;
+  }
+
+  .map-container {
+    width: 300px;
   }
 
   .contact-text {
