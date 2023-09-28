@@ -137,7 +137,7 @@ header {
   }
 
   .hero-content p {
-    font-size: 0.7rem;
+    font-size: 0.95rem;
   }
 
   .hero {
@@ -149,11 +149,14 @@ header {
   }
 
   .hero-content {
-    width: 350px;
+    width: 100%;
   }
 
   .about-us img {
     height: 100px;
+    position: absolute;
+    right: 5px;
+    top: 335px;
   }
 
   .nav-container div {
