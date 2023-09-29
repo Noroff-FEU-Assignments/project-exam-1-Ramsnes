@@ -24,7 +24,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: fixed; apply in mq? */
   background-color: #ffffff;
   min-height: 50px;
   width: 100%;
@@ -198,8 +197,6 @@ p {
   }
 }
 
-/* mq */
-/* tablet */
 @media (max-width: 1000px) {
   .logo {
     width: 50px;
@@ -224,11 +221,6 @@ p {
 
   footer {
     font-size: 0.65rem;
-  }
-
-  .blackLine {
-    padding: 0.8px;
-    top: 90px;
   }
 }
 
@@ -301,11 +293,5 @@ p {
 
   footer {
     font-size: 0.55rem;
-  }
-
-  .blackLine {
-    padding: 0.5px;
-    display: block;
-    top: 90px;
   }
 }
