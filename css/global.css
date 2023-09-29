@@ -152,16 +152,6 @@ p {
   background-color: black;
   border-radius: 10px;
 }
-/**/
-
-/* .blackLine {
-  display: none;
-  background-color: black;
-  padding: 1px;
-  width: 100%;
-  position: absolute;
-  top: 105px;
-} */
 
 .error {
   color: red;

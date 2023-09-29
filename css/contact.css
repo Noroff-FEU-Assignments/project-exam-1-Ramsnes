@@ -73,7 +73,7 @@ fieldset div {
 }
 
 #formButton:hover {
-  background: rgb(133, 11, 11, 0.8);
+  background: rgba(133, 11, 11, 0.9);
   transform: scale(1);
 }
 

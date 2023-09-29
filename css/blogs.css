@@ -3,8 +3,6 @@ h1 {
 }
 
 .blogs10 {
-  /* display: flex;
-  flex-direction: row; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
@@ -40,7 +38,6 @@ h1 {
   display: block; /* Needed to be able to center align the button */
   margin: 10px auto 50px;
   text-align: center;
-  /* background: rgb(11, 91, 133); */
   background: rgb(133, 11, 11);
   width: 200px;
   padding: 1rem;
@@ -53,7 +50,7 @@ h1 {
 
 #loadMoreButton:hover {
   transform: scale(1);
-  background: rgb(133, 11, 11, 0.8);
+  background: rgba(133, 11, 11, 0.9);
 }
 
 /* #loading is on global.css */
