@@ -1,4 +1,4 @@
-// Image slider
+// Image  accordion slider
 const images = document.querySelectorAll(".image-accordion img");
 images.forEach(function (image) {
   image.onclick = function (event) {
@@ -10,6 +10,9 @@ images.forEach(function (image) {
   };
 });
 
+//
+//
+//
 // Carousel
 // API fetch
 const baseUrl = "https://cors.noroff.dev/ramsnes.no/wp-json/";
@@ -85,6 +88,9 @@ fetchTotalPosts().then(() => {
   renderLatestPosts(currentPage);
 });
 
+//
+//
+//
 // Buttons
 // Event listeners for next and previous buttons
 const prevButton = document.querySelector(".prev");
