@@ -49,7 +49,9 @@ h3 {
 
 .button-outlined-small {
   margin: auto;
-  left: 85px;
+  /* left: 85px; */
+  left: 35px;
+  bottom: 0%;
   position: absolute;
   background-color: #000;
   color: #fff;
@@ -143,10 +145,11 @@ figure:hover {
   transition: transform 0.5s ease-in-out;
   transform-origin: center; /* Set the transform origin to the center */
   width: 400%;
+  margin: auto 100px;
 }
 
 .carousel-title-wrap {
-  margin: 20px 100px;
+  /* margin: 20px 100px; */
   justify-content: space-between; /* Distribute content evenly */
   align-items: center; /* Center content vertically */
   overflow: hidden;
@@ -189,6 +192,11 @@ figure:hover {
 /* mq */
 /* tablet */
 @media (max-width: 1000px) {
+  .button-outlined-small {
+    left: 35px;
+    bottom: 210px;
+  }
+
   .carousel img {
     height: 110px;
   }
@@ -235,6 +243,11 @@ figure:hover {
 
 /* phone */
 @media (max-width: 500px) {
+  .button-outlined-small {
+    left: 45px;
+    bottom: 265px;
+  }
+
   .welcome-banner {
     font-size: 30px;
   }
