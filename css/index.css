@@ -50,8 +50,8 @@ button:hover {
   margin: auto;
   /* left: 85px; */
   left: 35px;
-  bottom: 0%;
-  position: absolute;
+  bottom: -230px;
+  position: sticky;
   background-color: #000;
   color: #fff;
   padding: 0.55rem 0.9rem;
@@ -198,8 +198,8 @@ figure:hover {
 /* tablet */
 @media (max-width: 1000px) {
   .button-outlined-small {
-    left: 35px;
-    bottom: 210px;
+    left: 40px;
+    bottom: 45px;
   }
 
   .carousel img {
@@ -248,7 +248,7 @@ figure:hover {
 @media (max-width: 500px) {
   .button-outlined-small {
     left: 45px;
-    bottom: 265px;
+    bottom: 35px;
   }
 
   .welcome-banner {
