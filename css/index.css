@@ -249,6 +249,7 @@ figure:hover {
   .button-outlined-small {
     left: 45px;
     bottom: 35px;
+    padding: 0.35rem 0.7rem;
   }
 
   .welcome-banner {
