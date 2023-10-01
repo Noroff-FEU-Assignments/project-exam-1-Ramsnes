@@ -90,7 +90,6 @@ fetchTotalPosts().then(() => {
 
 //
 //
-//
 // Buttons
 // Event listeners for next and previous buttons
 const prevButton = document.querySelector(".prev");
