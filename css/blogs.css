@@ -55,6 +55,7 @@ h1 {
 
 /* Load animation */
 #loading:before {
+  position: fixed;
   top: 40%;
 }
 
