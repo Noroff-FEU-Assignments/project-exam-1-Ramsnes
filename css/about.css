@@ -78,6 +78,18 @@
   flex-direction: row;
 }
 
+.video-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* video frame  */
+.video-section iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+}
+
 .about-us img {
   height: 250px;
   border-radius: 0.2rem;
