@@ -258,7 +258,7 @@ p {
 
   .navbar-links.active {
     display: flex;
-    /* backdrop-filter: blur(3px); Does not work on Safari*/
+    backdrop-filter: blur(3px); /* Does not work on Safari*/
     border: 1px solid black;
     z-index: 2;
     width: 200px;

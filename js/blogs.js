@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", async function () {
   let tenBlogs = document.querySelector(".blogs10");
-  let viewMore = document.querySelector(".viewMore");
 
-  // API fetch
+  // API fetch URLs
   const baseUrl = "https://cors.noroff.dev/ramsnes.no/wp-json/";
   const postsUrl = "wp/v2/posts?_embed";
 
-  // API data(posts) fetch
+  // API data(blog posts) fetch
   async function fetchData(page, perPage) {
     try {
       const response = await fetch(
@@ -26,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     try {
       const tenPosts = await fetchData(currentPage, postsPerPage);
 
-      // Append the new blogs to the existing content
+      // Appending the new blogs to the existing ones
       tenPosts.forEach(function (element) {
         const postsElement = document.createElement("li");
         const blogPosts = `
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       });
 
       if (tenPosts.length < postsPerPage) {
-        loadMoreButton.style.display = "none";
+        loadMoreButton.style.display = "none"; // removes the button if none blogs left
       }
 
       // Removes the loading element after rendering
@@ -65,11 +64,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     renderHTML();
   }
 
-  // Click event listener to "Load More" button
+  // Click event listener to "Load More" button and func above
   const loadMoreButton = document.getElementById("loadMoreButton");
   loadMoreButton.addEventListener("click", loadMorePosts);
 
-  // Fetching and rendering the initial posts
+  // Fetching and rendering the initial posts, saved in a variabel
   const initialPosts = await fetchData(currentPage, postsPerPage);
   renderHTML();
 });
