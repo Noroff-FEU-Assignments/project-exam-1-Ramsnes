@@ -16,13 +16,12 @@ form.addEventListener("submit", (e) => {
 
   // Name
   if (nameBox.value === "" || nameBox.value == null) {
-    const errorMessage =
-      "A name is required with more than 5 characters long. ";
+    const errorMessage = "A full name is required. ";
     messages.push(errorMessage);
 
     let combinedErrorMessage = errorMessage;
     if (nameBox.value.length < 5) {
-      const errorMessage2 = "Full name must exceed 5 characters. ";
+      const errorMessage2 = "Must exceed 5 characters. ";
       messages.push(errorMessage2);
       combinedErrorMessage += " " + errorMessage2;
     }

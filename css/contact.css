@@ -25,12 +25,14 @@ Contact form
 }
 
 /* Colors the error messages */
-/* #nameField,
-#email,
-#subject,
-#message {
+.nameError,
+.emailError,
+.subjectError,
+.messageBoxError {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   color: rgb(220, 59, 59);
-} */
+}
 
 form {
   margin: 0;
@@ -135,6 +137,13 @@ fieldset div {
     width: 200px;
   }
 
+  .nameError,
+  .emailError,
+  .subjectError,
+  .messageBoxError {
+    font-size: 0.9rem;
+  }
+
   #error {
     margin: 0 100px 20px;
     font-size: 1.2rem;
@@ -158,6 +167,13 @@ fieldset div {
 @media (max-width: 500px) {
   header {
     margin: 12px auto 40px;
+  }
+
+  .nameError,
+  .emailError,
+  .subjectError,
+  .messageBoxError {
+    font-size: 0.8rem;
   }
 
   .map-container {
