@@ -98,8 +98,11 @@ const nextButton = document.querySelector(".next");
 prevButton.addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
-    renderLatestPosts(currentPage);
+  } else {
+    // If we are on the first page, go to the last page
+    currentPage = Math.ceil(totalPosts / postsPerPage);
   }
+  renderLatestPosts(currentPage);
 });
 
 nextButton.addEventListener("click", () => {

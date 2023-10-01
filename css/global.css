@@ -239,7 +239,7 @@ p {
 
   .nav-container div {
     /* margin: 70px 100px; */
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
   }
 
   .nav-container ul {
@@ -258,7 +258,7 @@ p {
 
   .navbar-links.active {
     display: flex;
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); Does not work on Safari*/
     border: 1px solid black;
     z-index: 2;
     width: 200px;
@@ -266,6 +266,7 @@ p {
     top: 2.5rem;
     left: -3.5rem;
     animation: fadeIn 500ms;
+    border-radius: 2px;
   }
 
   @keyframes fadeIn {
