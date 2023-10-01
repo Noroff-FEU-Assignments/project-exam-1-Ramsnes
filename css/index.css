@@ -10,18 +10,15 @@ h3 {
 
 /* Buttons */
 button.prev {
-  position: absolute;
   left: 0;
-  top: 80px;
 }
 button.next {
-  position: absolute;
   right: 0;
-  top: 80px;
 }
 
 button.prev,
 button.next {
+  position: absolute;
   display: flex;
   font-size: 24px;
   align-items: center;
@@ -31,7 +28,6 @@ button.next {
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  position: absolute;
   top: 40%;
   transform: translateY(-50%);
   z-index: 1;
@@ -48,23 +44,22 @@ button:hover {
 
 .button-outlined-small {
   margin: auto;
-  /* left: 85px; */
   left: 35px;
   bottom: -230px;
-  position: sticky;
   background-color: #000;
   color: #fff;
+  border: 1.5px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   padding: 0.55rem 0.9rem;
+  position: sticky;
   text-transform: capitalize;
+  cursor: pointer;
+  text-decoration: none;
   border-radius: 10px;
   transition: 0.3s ease;
-  cursor: pointer;
-  z-index: 1;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
   transform: scale(0.95);
-  border: 1.5px solid white;
+  z-index: 1;
 }
 
 .button-outlined-small:hover {
@@ -83,7 +78,7 @@ button:hover {
   color: #333;
   text-align: center;
   padding: 20px;
-  opacity: 0; /* Initially, make the text transparent */
+  opacity: 0; /* Initially makes the text transparent */
   animation: fadeIn 1s ease-in forwards; /* links to @keyframefadeIn */
 }
 
@@ -103,8 +98,6 @@ button:hover {
   max-width: 1100px;
   background: #fff;
   margin: 0px auto 50px;
-  /* max-width: 955px;
-  height: 340px; */
 }
 
 .image-accordion img {
@@ -158,7 +151,6 @@ figure:hover {
 
 .carousel-item {
   flex: 0 0 25%; /* Each item takes 25% of the container width */
-  /* margin: 10px; hold */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -168,7 +160,7 @@ figure:hover {
 }
 
 .carousel-item:hover {
-  transform: scale(0.9); /* Enlarges the items when I hover */
+  transform: scale(0.9); /* Enlarges the items when I hover over */
 }
 
 .carousel-item a {

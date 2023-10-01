@@ -1,8 +1,8 @@
 /* hero banner  */
 .hero {
-  background-image: url("/images/Gracie-Family.jpg");
+  background-image: url("/images/Carlos-Gracie-1536x824.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   height: 400px;
   display: flex;
   align-items: center;
@@ -16,6 +16,7 @@
   background: rgba(255, 255, 255, 0.7);
   color: black;
   border-radius: 10px;
+  backdrop-filter: blur(2px);
 }
 
 .hero-content p {
@@ -39,7 +40,7 @@
   padding: 0px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  overflow: hidden; /* Hide overflow content */
+  overflow: hidden;
 }
 
 .timeline-event h3 {
@@ -123,9 +124,9 @@ header {
   }
 
   .video-section iframe {
-    width: 100%; /* Sets the width to 100% for responsiveness */
-    max-width: 300px; /* Set a maximum width */
-    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    width: 100%; /* Sets 100% for responsiveness */
+    max-width: 300px;
+    height: auto;
   }
 }
 
