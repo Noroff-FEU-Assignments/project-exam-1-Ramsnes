@@ -66,6 +66,7 @@ form.addEventListener("submit", (e) => {
     messageBoxError.innerText = errorMessage; // Set the error message for message length
   }
 
+  // Subject
   if (subjectBox.value.length <= 6) {
     const errorMessage = "Subject must be of 6 or more characters";
     messages.push(errorMessage);
@@ -74,7 +75,7 @@ form.addEventListener("submit", (e) => {
 
   if (messages.length > 0) {
     e.preventDefault(); // Prevents page reload
-    errorElement.innerText = messages.join(" ...  "); // All error messages joined, each separated by a comma
+    //errorElement.innerText = messages.join(" ...  "); // All error messages joined, each separated by a comma. This code not needed anymore, but kept for future coding
   }
 });
 
