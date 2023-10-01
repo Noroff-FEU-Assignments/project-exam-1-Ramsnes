@@ -149,6 +149,7 @@ header {
 
   .hero-content {
     width: 100%;
+    border-radius: 0px;
   }
 
   .about-us img {
