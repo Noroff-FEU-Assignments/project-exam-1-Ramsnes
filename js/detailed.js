@@ -28,10 +28,10 @@ async function renderHTML() {
 
     // title change dynamically
     document.title = `Jiu Jitsu | ${blog.title.rendered}`;
-
+    // renders the title
     const header = document.getElementById("postTitle");
     header.innerHTML = blog.title.rendered;
-
+    // renders the text
     const text = document.getElementById("postText");
     text.innerHTML = blog.excerpt.rendered;
 
@@ -43,8 +43,8 @@ async function renderHTML() {
         if (featuredMediaData.source_url) {
           image.src = featuredMediaData.source_url;
         } else {
-          // In case the  featured image URL is missing
-          image.src = ""; // Default image
+          // If the featured image URL is missing, prettier than broken img icon
+          image.src = "";
         }
       });
   } catch (error) {
