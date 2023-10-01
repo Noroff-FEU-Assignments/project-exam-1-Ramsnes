@@ -74,7 +74,7 @@
       <div class="contact-form">
         <div id="error"></div>
 
-        <form id="form">
+        <form id="form" novalidate>
           <fieldset>
             <legend>Contact us</legend>
             <div>
@@ -86,10 +86,12 @@
                 id="nameField"
                 class="form__input"
               />
+              <div class="nameError"></div>
             </div>
             <div>
               <label for="email">Email</label>
               <input type="email" name="email" id="email" class="form__input" />
+              <div class="emailError"></div>
             </div>
             <div>
               <label for="subject">Subject:</label>
@@ -100,6 +102,7 @@
                 cols="20"
                 class="subject"
               ></textarea>
+              <div class="subjectError"></div>
             </div>
             <div>
               <label for="message">Message</label>
@@ -110,6 +113,7 @@
                 cols="20"
                 class="message"
               ></textarea>
+              <div class="messageBoxError"></div>
             </div>
           </fieldset>
           <button id="formButton" type="submit">Submit</button>

@@ -24,6 +24,14 @@ Contact form
   margin: 20px 0px;
 }
 
+/* Colors the error messages */
+/* #nameField,
+#email,
+#subject,
+#message {
+  color: rgb(220, 59, 59);
+} */
+
 form {
   margin: 0;
   display: flex;
@@ -51,6 +59,7 @@ fieldset div {
 }
 
 #error {
+  display: none; /* hide messages above, but keep code */
   font-size: 1.3rem;
   margin: 10px 300px 20px;
   color: rgb(220, 59, 59);
